@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="আমার ব্যক্তিগত ওয়েবসাইট">
+  <title>আমার ওয়েবসাইট</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7ff;
+      color: #1e293b;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 16px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      box-shadow: 0 3px 15px #0000000d;
+    }
+
+    .logo {
+      color: #2563eb;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #334155;
+      margin-left: 12px;
+      font-size: 14px;
+    }
+
+    .hero {
+      padding: 65px 20px;
+      text-align: center;
+      color: white;
+      background: linear-gradient(135deg, #2563eb, #7c3aed);
+    }
+
+    .hero h1 {
+      font-size: clamp(30px, 7vw, 46px);
+      line-height: 1.3;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      max-width: 550px;
+      margin: 0 auto 25px;
+      color: #eef2ff;
+    }
+
+    .btn {
+      display: inline-block;
+      background: white;
+      color: #2563eb;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.2s;
+    }
+
+    .btn:active {
+      transform: scale(0.96);
+    }
+
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 28px;
+      margin-bottom: 12px;
+      color: #1d4ed8;
+    }
+
+    .intro {
+      max-width: 650px;
+      margin: 0 auto;
+      color: #64748b;
+    }
+
+    .photo {
+      display: block;
+      width: 100%;
+      max-width: 420px;
+      height: auto;
+      margin: 25px auto 0;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px #1e40af20;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 950px;
+      margin: 30px auto 0;
+    }
+
+    .card {
+      background: white;
+      padding: 25px 20px;
+      border-radius: 18px;
+      box-shadow: 0 8px 25px #00000008;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card .emoji {
+      font-size: 38px;
+    }
+
+    .card h3 {
+      margin: 10px 0;
+      color: #1d4ed8;
+    }
+
+    .card p {
+      color: #64748b;
+      font-size: 15px;
+    }
+
+    .contact {
+      background: #e0eaff;
+    }
+
+    .contact p {
+      margin: 10px auto 22px;
+    }
+
+    footer {
+      background: #172554;
+      color: #e2e8f0;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 480px) {
+      header {
+        justify-content: center;
+      }
+
+      nav a {
+        margin: 0 6px;
+      }
+
+      .hero {
+        padding: 50px 18px;
+      }
+
+      section {
+        padding: 40px 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">✨ আমার ওয়েবসাইট</div>
+
+    <nav>
+      <a href="#home">হোম</a>
+      <a href="#about">আমার সম্পর্কে</a>
+      <a href="#services">সেবা</a>
+      <a href="#contact">যোগাযোগ</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <h1>আমার ওয়েবসাইটে স্বাগতম! 👋</h1>
+
+      <p>
+        এটি আমার নিজের তৈরি সুন্দর ও আধুনিক ওয়েবসাইট।
+        আমি নতুন কিছু শিখছি এবং নিজের স্বপ্ন গড়ছি।
+      </p>
+
+      <a class="btn" href="#about">আমার সম্পর্কে জানুন ↓</a>
+    </section>
+
+    <section id="about">
+      <h2 class="section-title">আমার সম্পর্কে 💙</h2>
+
+      <p class="intro">
+        আমি মোবাইল দিয়ে ওয়েবসাইট তৈরি শিখছি।
+        প্রযুক্তি, ডিজাইন এবং নতুন কিছু তৈরি করতে ভালোবাসি।
+        এই ওয়েবসাইটটি আমার শেখার যাত্রার একটি অংশ।
+      </p>
+
+      <img
+        class="photo"
+        src="https://placehold.co/800x500/dbeafe/1d4ed8?text=My+Website"
+        alt="আমার ওয়েবসাইটের নমুনা ছবি"
+      >
+    </section>
+
+    <section id="services">
+      <h2 class="section-title">আমার কাজসমূহ 🚀</h2>
+
+      <p class="intro">
+        এখানে আমার আগ্রহ ও কাজের পরিচয় তুলে ধরব।
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <div class="emoji">💻</div>
+          <h3>ওয়েব ডিজাইন</h3>
+          <p>সুন্দর ও সহজে ব্যবহারযোগ্য ওয়েবপেজ তৈরি শেখা।</p>
+        </article>
+
+        <article class="card">
+          <div class="emoji">🎨</div>
+          <h3>সৃজনশীল কাজ</h3>
+          <p>নতুন আইডিয়া, ডিজাইন ও ডিজিটাল কনটেন্ট তৈরি।</p>
+        </article>
+
+        <article class="card">
+          <div class="emoji">📱</div>
+          <h3>মোবাইল প্রজেক্ট</h3>
+          <p>মোবাইল ব্যবহার করেই নতুন ওয়েব প্রজেক্ট তৈরি।</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="section-title">যোগাযোগ করুন 📩</h2>
+
+      <p>আমার সঙ্গে যোগাযোগ করতে নিচের বাটনে চাপ দিন।</p>
+
+      <a
+        class="btn"
+        href="mailto:yourname@example.com?subject=Website%20Contact"
+      >
+        ইমেইল পাঠান ✉️
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 আমার ওয়েবসাইট। সর্বস্বত্ব সংরক্ষিত।</p>
+    <p>ভালোবাসা দিয়ে তৈরি ❤️</p>
+  </footer>
+
+</body>
+</html>
